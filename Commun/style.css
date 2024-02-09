@@ -1,0 +1,236 @@
+@font-face
+{
+    font-family: "Raleway";
+    src:  url('Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    display:flex;
+    flex-direction: column;
+    color:black;
+    font-family: 'Raleway','Arial';
+    background-color: rgb(235, 235, 235);
+}
+
+#Milieu
+{
+    width:70%;
+    height: 100%;
+    margin:auto;
+    padding:20px;
+    background-color: white;
+}
+
+.côtés
+{
+    width: 15%;
+    background-color: rgb(235, 235, 235);
+}
+
+/* Ce qui concerne le tout :*/
+#Bannière
+{
+    /*En ce qui concerne le contenu :*/
+    padding: 20px;
+    margin: auto; /*Sans cette ligne, la bannière est alignée à gauche de la page.*/
+    /*Comment faire une marge entre le haut de la page et la bannière ?*/
+}
+
+/* Ce qui concerne le texte de la bannière */
+#Texte_bannière
+{
+    text-align:center;
+    font-size: 200%;
+    font-style: none;
+    letter-spacing: 1px;
+}
+
+/*En ce qui concerne les liens dans le texte de bannière*/
+#Texte_bannière a, #bannière a:visited
+{
+    color:black;
+    text-decoration: none; /*Empêche le titre d'être souligné, comme tout lien habituellement.*/
+}
+
+#Texte_bannière a:hover
+{
+    background-color:rgb(235, 235, 235);
+    border: 0px #069E2D solid;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#Barre_menu
+{
+    border:#069E2D solid 1px;
+    border-radius: 15px;
+    background-color: none;
+    padding: 20px;
+    display: flex;
+    text-align:center;
+}
+
+.Bouton
+{
+    margin:auto;
+}
+
+#Barre_menu a
+{
+    color:black;
+    text-decoration: none; 
+    padding: 15px;   
+}
+
+#Barre_menu a:hover 
+{
+    background-color:rgb(235, 235, 235);
+    border: 0px black solid;
+    border-radius: 20px;
+    color: #069E2D;
+    font-style: none;
+}
+
+.Introduction
+{
+    font-size: xx-large;
+    text-decoration: none;
+    padding : auto;
+    border-spacing: 5px;
+    margin : 20px;
+    text-align: center;
+    display:flex;
+}
+
+.Texte_introduction
+{
+    margin:auto;
+    padding:10px;
+    border-bottom:#069E2D 2px solid;
+    border-top:#069E2D 2px solid;
+}
+
+p
+{
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+section p, #Affichage_de_larticle p
+{
+    border-left: solid 1px transparent;
+    padding-left : 5px;
+}
+
+section p:hover, #Affichage_de_larticle p:hover
+{
+    border-left: solid 1px #069E2D;
+}
+
+section p:hover, #Affichage_de_larticle p:hover
+{
+    border-left: solid 1px #069E2D;
+    padding-left: 5px;
+}
+
+section p a
+{
+    color:#069E2D;
+}
+
+div.article
+{
+    border: #069E2D 1px solid;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.article a 
+{
+    text-decoration: none;
+    color: #069E2D;
+}
+
+li a
+{
+    color:#069E2D;  
+}
+
+/*id->#*/
+
+#Language
+{
+    position: fixed;
+    top : 2%;
+    right : 2%;
+
+    border: #069E2D solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/*La suite ne sert pas : */
+
+@media screen and (min-width: 100px) and (max-width: 480px) /* for mobile devices*/
+{
+    img
+    {
+        height: 50px ;
+        width : 100px ;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width : 768px) /* for iPads, Tablets */
+{
+    img
+    {
+        height: 100px ;
+        width : 200px ;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width : 1024px) /* for small screens and laptops*/
+{
+    p
+    {
+        text-decoration: bold;
+    }
+    img
+    {
+        height: 250px ;
+        width : 500px ;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width : 1200px ) /* for desktops and large screens*/
+{
+    p
+    {
+        text-decoration: bold;
+    }
+    img
+    {
+        height: 500px ;
+        width : 1000px ;
+    }
+}
+
+@media screen and (min-width: 12001) and (max-width : 100000px) /*for extra large screens, TV*/
+{
+    img
+    {
+        height: 600px;
+        width : 1200px;
+    }
+}
+
+
